@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Dancing+Script:wght@400;600&family=Lexend+Deca&family=Overpass:wght@400;700&family=Pacifico&family=Roboto:wght@100&family=Source+Code+Pro:wght@800&family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <nav>
+    <img src="images/logo.svg" alt="">
+  </nav>
+  <main>
+
+    <div class="bill-wrapper">
+      <div class="bill">
+        <label for="bill-input">Bill</label><br>
+        <input id="bill-input" type="text" placeholder="0">
+      </div>
+
+      <div class="tip-calculator">
+        <div class="select">Select Tip %</div>
+        <div class="btns-grid">
+          <button>5%</button>  
+          <button>10%</button>  
+          <button>15%</button>  
+          <button>25%</button>  
+          <button>50%</button> 
+          <input class="custom" type="text" placeholder="custom">  
+        </div>
+      </div>  
+
+      <div class="people-count">
+        <div class="flex">
+          <div><label for="people-count-input">Number of People</label></div>
+          <div class="error"></div>
+          <!-- <br> -->
+        </div>
+        <input id="people-count-input" type="text" placeholder="0">
+      </div>
+    </div>
+
+
+    <div class="tip-wrapper">
+      <div class="tip-flex">
+        <div class="one">Tip Amount <span class="br">/ person </span></div> 
+        <div class="tip-el color">$0.00</div>
+      </div>
+
+      <div class="tip-flex">
+        <div class="one"> Total <span class="br">/ person </span></div> 
+        <div class="total-el color">$0.00</div>
+      </div>
+      
+      <button class="reset-btn">Reset</button>
+
+    </div>
+
+  </main>
+ 
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>

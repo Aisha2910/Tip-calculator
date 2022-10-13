@@ -1,0 +1,212 @@
+*{
+    border: 0;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: hsl(183, 100%, 15%);
+    font-weight: 700;
+    font-family: 'Space Mono', monospace;
+    outline: none; 
+}
+
+body{
+    background: hsl(185, 41%, 84%);
+    display: grid;
+   min-height:100vh;
+   
+    
+}
+nav{
+    text-align: center;
+    margin: 10% auto;
+}
+main{
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 20px;
+    padding:30px;
+    width: 100%;
+}
+button,input{
+    cursor: pointer;
+}
+.select{
+    cursor: pointer;
+}
+#bill-input,#people-count-input{
+    border-radius: 5px;
+    object-fit: contain;
+    background-repeat: no-repeat;
+    background-position: 10px 0;
+    width: 100%;
+    background-color:hsl(185, 41%, 84%) ;
+    text-align: right ;
+    padding-right: 20px;
+    font-size: 24px;
+    height: 35px;
+    cursor: pointer;
+    margin-top: 10px ;
+}
+#bill-input{
+    background-image: url(images/icon-dollar.svg);
+   
+}
+#people-count-input{
+     background-image: url(images/icon-person.svg);
+    
+     
+}
+#bill-input:hover, #people-count-input:hover{
+    outline: 2px solid rgba(7, 223, 223, 0.934);
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+
+}
+.error{
+    text-align: right;
+    color: red;
+}
+.error-outline{
+    border:2px solid red;
+    outline: none;
+}
+
+
+.bill-wrapper{
+    width: 100%;
+}
+
+.reset-btn{
+    width: 100%;
+    height: 40px;
+    margin: 10px auto;
+    text-transform: uppercase;
+    background-color:rgba(7, 223, 223, 0.934);
+    border-radius: 5px;
+    font-size: 24px;
+}
+.reset-btn:hover{
+    background-color:hsl(185, 41%, 84%);
+}
+.select{
+    margin: 30px auto 20px;
+}
+
+.btns-grid button , .custom{
+    margin: 0;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(183, 100%, 15%);
+    font-size: 24px;
+    border-radius: 5px;
+}
+
+.btns-grid button:focus {
+    background-color: rgba(7, 223, 223, 0.934);
+    color: hsl(183, 100%, 15%);
+}
+.custom:focus{
+    color: hsl(183, 100%, 15%);;
+    background-color: white;
+    outline: 2px solid rgba(7, 223, 223, 0.934);;
+}
+
+.btns-grid{
+    width: 100%;
+    display: grid;
+    grid-template-columns:repeat(2, 1fr);
+    grid-template-rows: repeat(3,40px);
+    gap: 20px;
+    justify-content:space-between;
+    margin-bottom: 30px;
+}
+input.custom{
+   padding-left: 40px;
+   padding-right: 10px;
+   width: inherit;
+   text-transform: capitalize;
+   font-size:30px;
+   background-color: hsl(185, 41%, 84%);
+   text-align: right;
+}
+
+.tip-wrapper{
+    background-color:hsl(183, 100%, 15%);
+    padding: 30px 20px 20px;
+    margin: 30px auto;
+    border-radius: 15px;
+}
+.tip-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.color{
+    color:rgba(7, 223, 223, 0.934);
+    font-size: 24px;
+}
+.br{
+    display: block;
+    color:rgba(49, 136, 136, 0.934);
+}
+.one{
+    color:hsl(0, 0%, 100%);
+}
+@media screen and  (min-width:600px) {
+    body{
+        place-items: center;
+    }
+    main{
+        margin: 0;
+        display: flex;
+        gap: 30px;
+        max-width: 700px;
+        height: auto;
+       
+        
+    }
+    main div{
+        flex: 1;
+        
+    }
+    
+    nav{
+        margin: 0;
+    }
+    button{
+        height: 30px;
+    }
+    .btns-grid{
+        width: 100%;
+        display: grid;
+        grid-template-columns:repeat(3,1fr);
+        grid-template-rows: repeat(2,30px);
+        grid-gap: 10px;
+        justify-content:space-between;
+        margin-bottom: 30px;
+       
+    }
+    .btns-grid button{
+        font-size: 15px;
+    }
+    .tip-wrapper{
+        background-color:hsl(183, 100%, 15%);
+        margin: 0;
+        border-radius: 15px;
+    }
+    .reset-btn{
+      margin-top: 40%;
+      background-color:rgba(49, 136, 136, 0.934);
+    }
+    .color{
+        text-align: right;
+        font-size: 30px;
+    }
+    input.custom{
+        font-size: 20px;
+        padding-left: 10px;
+    }
+
+}
